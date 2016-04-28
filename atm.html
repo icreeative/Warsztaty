@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ATM Machine Console</title>
+	<link rel="stylesheet" href="css/bootstrap.css"></style>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="init();">
+	<div class="container">
+		<h1>ATM <small id="atmStatus"></small></h1>
+		<div class="row">
+			<div class="col-md-3" id="functionPanel">
+				<button type="button" class="row functionButton btn "></button>
+				<div class="clearfix"></div>
+				<button type="button" class="row functionButton btn "></button>
+				<div class="clearfix"></div>
+				<button type="button" class="row functionButton btn "></button>
+				<div class="clearfix"></div>
+				<button type="button" class="row functionButton btn " id="quitButton"></button>
+			</div>
+			<div class="col-md-6 text-center" id="screenAtmWrap">
+				<p class="error-message"></p>
+				<div id="screenAtm" class ="pagination">Insert Your Card to Reader</div>
+			</div>
+			<div class="col-md-3" id="cardService">
+				<h2>Card reader</h2>
+					<button type="button" id="cardReader" class="row functionButton btn "></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/ATM.js"></script>
+</body>
+</html>
